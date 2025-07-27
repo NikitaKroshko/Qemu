@@ -8,4 +8,4 @@ Save that dump to a text file.
 
 All together it looks like for filename program.c
 
-gcc addition.c -o addition.out && objdump -d addition.out > addition.txt
+gcc program.c -o program.out && objdump -d program.out > program.txt
