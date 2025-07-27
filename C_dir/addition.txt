@@ -1,0 +1,20 @@
+
+addition.out:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100003f70 <_main>:
+100003f70: d10043ff    	sub	sp, sp, #0x10
+100003f74: b9000fff    	str	wzr, [sp, #0xc]
+100003f78: 52800028    	mov	w8, #0x1                ; =1
+100003f7c: b9000be8    	str	w8, [sp, #0x8]
+100003f80: 52800048    	mov	w8, #0x2                ; =2
+100003f84: b90007e8    	str	w8, [sp, #0x4]
+100003f88: b94007e8    	ldr	w8, [sp, #0x4]
+100003f8c: 11000508    	add	w8, w8, #0x1
+100003f90: b90007e8    	str	w8, [sp, #0x4]
+100003f94: b9400be8    	ldr	w8, [sp, #0x8]
+100003f98: b94007e9    	ldr	w9, [sp, #0x4]
+100003f9c: 0b090100    	add	w0, w8, w9
+100003fa0: 910043ff    	add	sp, sp, #0x10
+100003fa4: d65f03c0    	ret
